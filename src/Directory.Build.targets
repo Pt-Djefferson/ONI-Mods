@@ -2,7 +2,7 @@
 <Project>
 
   <PropertyGroup  Condition=" '$(IsMainVersion)' != 'true' ">
-    <InstallLoc>$(MSBuildProjectName)\archived_versions</InstallLoc>
+    <InstallLoc>$(MSBuildProjectName)\archived_versions\$(MSBuildProjectName)_$(supportedContent)</InstallLoc>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(IsMainVersion)' == 'true' ">
     <InstallLoc>$(MSBuildProjectName)</InstallLoc>
