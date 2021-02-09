@@ -2,5 +2,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>   
     <AssemblyTitle>InfiniteResearch</AssemblyTitle>
+    <supportedContent>VANILLA_ID</supportedContent>
   </PropertyGroup>
 </Project>
