@@ -90,5 +90,20 @@
 		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(InstallFolder)\$(TargetFileName)" />
     <Copy SourceFiles="$(ModInfoFile)" DestinationFolder="$(InstallFolder)" />
 	</Target>
+
+  <Target Name="Zip" AfterTargets="CopyArtifactsToInstallFolder" Condition=" '$(Configuration)' == 'Release' And '$(ShouldDistribute)' != 'false' And '$(IsMainVersion)' == 'true' ">
+    <CreateItem
+      Include="$(InstallFolder)\*; $(InstallFolder)\archived_versions\*"
+      Exclude="$(InstallFolder)\*.zip">
+      <Output
+        ItemName="ZipFiles"
+        TaskParameter="Include"/>
+    </CreateItem>
+    <Zip
+      ZipFileName="$(DistributeFolder)\$(ProjectName).zip"
+      WorkingDirectory="$(InstallFolder)"
+      Files="@(ZipFiles)"
+      Flatten="false" />
+  </Target>
   
 </Project>
