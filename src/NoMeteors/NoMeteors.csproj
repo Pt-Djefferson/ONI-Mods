@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AssemblyTitle>NoMeteors</AssemblyTitle>
     <supportedContent>VANILLA_ID</supportedContent>
+    <IsMainVersion>true</IsMainVersion>
   </PropertyGroup>
 </Project>

@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
 
+  <PropertyGroup  Condition=" '$(IsMainVersion)' != 'true' ">
+    <InstallLoc>$(MSBuildProjectName)\archived_versions</InstallLoc>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(IsMainVersion)' == 'true' ">
+    <InstallLoc>$(MSBuildProjectName)</InstallLoc>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <InstallFolder>..\..\Release\$(InstallLoc)</InstallFolder>
+    <DistributeFolder>..\..\Distribute\</DistributeFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <InstallFolder>$(ModFolder)\DEV_$(InstallLoc)</InstallFolder>
+  </PropertyGroup>
+
+
+
   <ItemGroup>
     <Compile Remove="Previews\**" />
     <EmbeddedResource Remove="Previews\**" />

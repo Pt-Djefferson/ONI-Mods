@@ -49,12 +49,4 @@
 		<ProjectReference Include ="../AzeLib/AzeLib.csproj" Private ="true" />
 	</ItemGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <InstallFolder>..\..\Release\$(MSBuildProjectName)archived_versions</InstallFolder>
-    <DistributeFolder>..\..\Distribute\</DistributeFolder>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <InstallFolder>$(ModFolder)\DEV_$(MSBuildProjectName)\archived_versions</InstallFolder>
-  </PropertyGroup>
-
 </Project>
