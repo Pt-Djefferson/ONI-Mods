@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzeLib", "AzeLib\AzeLib.csproj", "{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FixedCameraPan", "FixedCameraPan\FixedCameraPan.csproj", "{36E144B6-3558-4213-82BD-70B2A57DA895}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuppressNotifications", "SuppressNotifications\SuppressNotifications.csproj", "{FBD4BFC8-DAC6-495A-A616-90E921919458}"
@@ -30,15 +32,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		AutoIncrement.targets = AutoIncrement.targets
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.props.default = Directory.Build.props.default
-		Directory.Build.props.user = Directory.Build.props.user
 		Directory.Build.targets = Directory.Build.targets
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrinkTeaNotCoffee", "DrinkTeaNotCoffee\DrinkTeaNotCoffee.csproj", "{9EA4F5CA-3063-4A73-AF33-5B0789B87F20}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterLogicOverlay", "BetterLogicOverlay\BetterLogicOverlay.csproj", "{6CE7DABE-015B-4828-A1FD-E972EBF4E8F9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzeLib", "AzeLib\AzeLib.csproj", "{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultBuildingSettings", "DefaultBuildingSettings\DefaultBuildingSettings.csproj", "{07FED0C7-DF6D-46BE-938C-0658572FAEC6}"
 EndProject
@@ -60,6 +59,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36E144B6-3558-4213-82BD-70B2A57DA895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36E144B6-3558-4213-82BD-70B2A57DA895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E144B6-3558-4213-82BD-70B2A57DA895}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -112,10 +115,6 @@ Global
 		{6CE7DABE-015B-4828-A1FD-E972EBF4E8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CE7DABE-015B-4828-A1FD-E972EBF4E8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CE7DABE-015B-4828-A1FD-E972EBF4E8F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCF19649-D3EC-44CC-BFAF-7C2547C4A82B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07FED0C7-DF6D-46BE-938C-0658572FAEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07FED0C7-DF6D-46BE-938C-0658572FAEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07FED0C7-DF6D-46BE-938C-0658572FAEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU

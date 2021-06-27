@@ -1,12 +1,10 @@
-﻿using Harmony;
-using HarmonyAnalyzers.Interface;
+﻿using HarmonyLib;
 using KMod;
 using System.Collections.Generic;
 using System.Reflection;
 
 namespace AzeLib
 {
-    [HarmonyPatchMock]
     public abstract class PostLoad
     {
         protected abstract IEnumerable<MethodBase> PostLoadTargetMethods();
@@ -14,9 +12,9 @@ namespace AzeLib
         [HarmonyPatch(typeof(Manager), nameof(Manager.Load))]
         private class Load_Patch
         {
-            private static HarmonyInstance harmonyInstance;
+            private static Harmony harmonyInstance;
 
-            public static void PrePatch(HarmonyInstance instance) => harmonyInstance = instance;
+            public static void PrePatch(Harmony instance) => harmonyInstance = instance;
 
             static void Postfix(Content content)
             {

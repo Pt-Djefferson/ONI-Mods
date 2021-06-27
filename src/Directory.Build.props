@@ -4,7 +4,7 @@
 	<Import Condition=" Exists('Directory.Build.props.user') " Project="Directory.Build.props.user" />
 
 	<PropertyGroup>
-		<TargetFramework>net40</TargetFramework>
+		<TargetFramework>net471</TargetFramework>
 		<LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     
@@ -27,10 +27,8 @@
     
 		<PackageReference Include="ILRepack.MSBuild.Task" Version="2.0.13" />
 		<PackageReference Include="Aze.Publicise.MSBuild.Task" Version="1.0.0"/>
-		<PackageReference Include="HarmonyAnalyzers" Version="1.0.0" />
 		<PackageReference Include="OniAnalyzers" Version="1.0.0" />
-		<PackageReference Include="PLib" Version="3.13.1" Private="true" />
-		<PackageReference Include="SuppressionAttributes" Version="1.0.0" />
+		<PackageReference Include="PLib" Version="4.2.0" Private="true" />
 		<PackageReference Include ="MSBuildTasks" Version="1.5.0.235"/>
 		<PackageReference Include ="System.ValueTuple" Version="4.5.0"/>
 		<Reference Include="0Harmony" HintPath="$(GameFolder)/0Harmony.dll" />
